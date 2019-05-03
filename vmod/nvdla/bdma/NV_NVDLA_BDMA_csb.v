@@ -7,8 +7,8 @@
 // ================================================================
 
 // File Name: NV_NVDLA_BDMA_csb.v
-
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_BDMA_csb (
    nvdla_core_clk            //|< i
   ,nvdla_core_rstn           //|< i
@@ -1020,7 +1020,7 @@ endmodule // NV_NVDLA_BDMA_csb
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_BDMA_LOAD_csb_fifo (
       nvdla_core_clk

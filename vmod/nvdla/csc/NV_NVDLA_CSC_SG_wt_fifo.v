@@ -7,9 +7,9 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CSC_SG_wt_fifo.v
-
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSC_SG_wt_fifo (
       clk
     , reset_
@@ -436,6 +436,7 @@ endmodule // NV_NVDLA_CSC_SG_wt_fifo
 // 
 // Flop-Based RAM (with internal wr_reg)
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSC_SG_wt_fifo_flopram_rwsa_4x20 (
       clk
     , clk_mgated
@@ -574,7 +575,7 @@ endmodule // NV_NVDLA_CSC_SG_wt_fifo_flopram_rwsa_4x20
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CSC_SG_wt_fifo_flopram_rwsa_4x20 (
    Wa0, we0, Di0,
    Ra0, Do0

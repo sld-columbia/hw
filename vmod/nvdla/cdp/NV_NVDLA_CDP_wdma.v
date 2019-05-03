@@ -7,10 +7,10 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_wdma.v
-
 #include "NV_NVDLA_CDP_define.h"
 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_wdma (
    nvdla_core_clk       
   ,nvdla_core_clk_orig  
@@ -1091,7 +1091,7 @@ endmodule // NV_NVDLA_CDP_wdma
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 #ifdef LARGE_FIFO_RAM
 
@@ -1765,6 +1765,7 @@ endmodule // NV_NVDLA_CDP_WDMA_dat_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_3x64 (
       clk
     , pwrbus_ram_pd
@@ -1887,7 +1888,7 @@ endmodule // NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_3x64
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_3x64 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -1967,7 +1968,7 @@ endmodule // vmw_NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_3x64
 #endif
 
 #ifdef SMALL_FIFO_RAM
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_WDMA_dat_fifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -2638,6 +2639,7 @@ endmodule // NV_NVDLA_CDP_WDMA_dat_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_8x8 (
       clk
     , pwrbus_ram_pd
@@ -2785,7 +2787,7 @@ endmodule // NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_8x8
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_8x8 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -2873,7 +2875,7 @@ endmodule // vmw_NV_NVDLA_CDP_WDMA_dat_fifo_flopram_rwsa_8x8
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_WDMA_cmd_fifo (
       nvdla_core_clk
@@ -3548,6 +3550,7 @@ endmodule // NV_NVDLA_CDP_WDMA_cmd_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_WDMA_cmd_fifo_flopram_rwsa_4x17 (
       clk
     , pwrbus_ram_pd
@@ -3673,7 +3676,7 @@ endmodule // NV_NVDLA_CDP_WDMA_cmd_fifo_flopram_rwsa_4x17
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CDP_WDMA_cmd_fifo_flopram_rwsa_4x17 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -3766,7 +3769,7 @@ endmodule // vmw_NV_NVDLA_CDP_WDMA_cmd_fifo_flopram_rwsa_4x17
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_WDMA_intr_fifo (
       nvdla_core_clk

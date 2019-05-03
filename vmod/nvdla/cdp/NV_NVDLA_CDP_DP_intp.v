@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_DP_intp.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CDP_define.h"
 
@@ -1516,7 +1517,7 @@ endmodule // NV_NVDLA_CDP_DP_intp
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 #ifdef LARGE_FIFO_RAM
 
@@ -2220,6 +2221,7 @@ endmodule // NV_NVDLA_CDP_DP_intpinfo_fifo
 #endif
 
 #ifdef SMALL_FIFO_RAM
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_DP_intpinfo_fifo (
       nvdla_core_clk
     , nvdla_core_rstn

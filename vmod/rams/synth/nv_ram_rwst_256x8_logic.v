@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: nv_ram_rwst_256x8_logic.v
+`include "NV_NVDLA_define.vh"
 
 `ifdef _SIMULATE_X_VH_
 `else

@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CSC_slcg.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CSC_slcg (
    dla_clk_ovr_on_sync

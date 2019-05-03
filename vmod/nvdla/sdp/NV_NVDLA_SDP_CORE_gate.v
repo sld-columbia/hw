@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_CORE_gate.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_CORE_gate (
    bcore_slcg_en

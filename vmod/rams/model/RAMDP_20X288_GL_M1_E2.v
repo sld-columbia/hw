@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: RAMDP_20X288_GL_M1_E2.v
+`include "NV_NVDLA_define.vh"
 
 `timescale 10ps/1ps
 `celldefine

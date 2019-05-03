@@ -1,4 +1,3 @@
-
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!                                                       !!!!!!!!!!!!
@@ -44,7 +43,7 @@
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_MRDMA_cq_256x14 (
       nvdla_core_clk
@@ -505,7 +504,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_cq_256x14
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_MRDMA_cq_64x14 (
       nvdla_core_clk
@@ -979,7 +978,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_cq_64x14
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_MRDMA_cq_16x14 (
       nvdla_core_clk

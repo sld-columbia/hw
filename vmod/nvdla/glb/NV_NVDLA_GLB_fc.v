@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_GLB_fc.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_GLB_fc (
    nvdla_core_clk

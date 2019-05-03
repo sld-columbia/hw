@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_CORE_Y_lut.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 #include "NV_NVDLA_SDP_define.h"
@@ -22383,7 +22384,7 @@ assign mon_cmd_fifo_rd_pvld = cmd_fifo_rd_pvld;
 endmodule // NV_NVDLA_SDP_CORE_Y_lut
 
 
-
+`include "NV_NVDLA_define.vh"
 module  NV_NVDLA_SDP_CORE_Y_lut_pipe_p1 (
    nvdla_core_clk
   ,nvdla_core_rstn
@@ -22410,7 +22411,7 @@ output [EW_IDX_OUT_DW-1:0] lut_in_pd;
 
 endmodule
 
-
+`include "NV_NVDLA_define.vh"
 module  NV_NVDLA_SDP_CORE_Y_lut_pipe_p2 (
    nvdla_core_clk
   ,nvdla_core_rstn
@@ -22445,7 +22446,7 @@ endmodule
 
 #if (NVDLA_SDP_EW_THROUGHPUT==1) 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -22771,6 +22772,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x32 (
       clk
     , pwrbus_ram_pd
@@ -22887,7 +22889,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x32
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x32 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -22963,7 +22965,7 @@ endmodule // vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x32
 `endif // EMU
 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -23367,6 +23369,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x70 (
       clk
     , pwrbus_ram_pd
@@ -23483,7 +23486,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x70
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x70 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -23562,7 +23565,7 @@ endmodule // vmw_NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x70
 #elif (NVDLA_SDP_EW_THROUGHPUT==2)
 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -23889,6 +23892,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x64 (
       clk
     , pwrbus_ram_pd
@@ -24004,7 +24008,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x64
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x64 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -24082,7 +24086,7 @@ endmodule // vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x64
 `endif // EMU
 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -24487,6 +24491,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x140 (
       clk
     , pwrbus_ram_pd
@@ -24602,7 +24607,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x140
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x140 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -24684,7 +24689,7 @@ endmodule // vmw_NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x140
 
 #else //(NVDLA_SDP_EW_THROUGHPUT==4) 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -25010,6 +25015,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x128 (
       clk
     , pwrbus_ram_pd
@@ -25127,7 +25133,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x128
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x128 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -25203,7 +25209,7 @@ endmodule // vmw_NV_NVDLA_SDP_CORE_Y_LUT_dat_flopram_rwsa_2x128
 `endif // EMU
 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -25607,6 +25613,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x280 (
       clk
     , pwrbus_ram_pd
@@ -25723,7 +25730,7 @@ endmodule // NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x280
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_CORE_Y_LUT_cmd_flopram_rwsa_2x280 (
    Wa0, we0, Di0,
    Ra0, Do0

@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_WDMA_intr.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 module NV_NVDLA_SDP_WDMA_intr (
@@ -325,7 +326,7 @@ endmodule // NV_NVDLA_SDP_WDMA_intr
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_WDMA_DAT_DMAIF_intr_fifo (
       nvdla_core_clk

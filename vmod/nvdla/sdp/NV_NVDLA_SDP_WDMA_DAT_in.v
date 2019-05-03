@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_WDMA_DAT_in.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_SDP_define.h"
 
@@ -838,7 +839,7 @@ NV_NVDLA_SDP_WDMA_DAT_IN_dfifo u_dfifo3 (
 
 endmodule // NV_NVDLA_SDP_WDMA_DAT_in
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_DAT_IN_dfifo (
       nvdla_core_clk
     , nvdla_core_rstn

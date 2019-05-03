@@ -7,10 +7,10 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_RDMA_eg.v
-
 #include "NV_NVDLA_CDP_define.h"
 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_RDMA_eg (
    nvdla_core_clk               //|< i
   ,nvdla_core_rstn              //|< i
@@ -727,6 +727,7 @@ endmodule // NV_NVDLA_CDP_RDMA_eg
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 
 #ifdef LARGE_FIFO_RAM
 
@@ -1436,6 +1437,7 @@ endmodule // NV_NVDLA_CDP_RDMA_lat_fifo
 
 #ifdef SMALL_FIFO_RAM
 
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_RDMA_lat_fifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -2156,7 +2158,8 @@ endmodule // NV_NVDLA_CDP_RDMA_lat_fifo
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
+  
 #ifdef LARGE_FIFO_RAM
 module NV_NVDLA_CDP_RDMA_ro_fifo (
       nvdla_core_clk
@@ -2561,6 +2564,7 @@ endmodule // NV_NVDLA_CDP_RDMA_ro_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_4x64 (
       clk
     , pwrbus_ram_pd
@@ -2687,6 +2691,7 @@ endmodule // NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_4x64
 //
 `ifdef EMU
 
+ `include "NV_NVDLA_define.vh"
 
 module vmw_NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_4x64 (
    Wa0, we0, Di0,
@@ -2767,6 +2772,7 @@ endmodule // vmw_NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_4x64
 #endif
 
 #ifdef SMALL_FIFO_RAM
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_RDMA_ro_fifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -3170,6 +3176,7 @@ endmodule // NV_NVDLA_CDP_RDMA_ro_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_8x8 (
       clk
     , pwrbus_ram_pd
@@ -3317,7 +3324,7 @@ endmodule // NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_8x8
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CDP_RDMA_ro_fifo_flopram_rwsa_8x8 (
    Wa0, we0, Di0,
    Ra0, Do0

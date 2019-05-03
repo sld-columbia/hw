@@ -1,3 +1,4 @@
+`include "NV_NVDLA_define.vh"
 //RAM             : RAMDP_64X16_GL_M2_E2
 //Technology      : TSMC16FFLR
 //Compiler version: FINAL.1 - 2017-05-23.14:46:11

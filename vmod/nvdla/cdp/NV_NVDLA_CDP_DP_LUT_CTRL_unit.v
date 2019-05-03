@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_DP_LUT_CTRL_unit.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_LUT_CTRL_unit (
    nvdla_core_clk             

@@ -7,9 +7,9 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDMA_WG_fifo.v
-
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDMA_WG_fifo (
       clk
     , reset_
@@ -498,6 +498,7 @@ endmodule // NV_NVDLA_CDMA_WG_fifo
 
 // folded ram wrapper
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CDMA_WG_fifo_folded_ram_rws_128x5(
       clk
     , clk_mgated

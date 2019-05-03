@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CMAC_core.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CMAC.h"
 

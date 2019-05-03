@@ -1,4 +1,3 @@
-
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!                                                       !!!!!!!!!!!!
@@ -32,7 +31,7 @@
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_data_fifo_80x72 (
       nvdla_core_clk
@@ -754,7 +753,7 @@ endmodule // NV_NVDLA_CDP_DP_data_fifo_80x72
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_data_fifo_80x36 (
       nvdla_core_clk
@@ -1476,7 +1475,7 @@ endmodule // NV_NVDLA_CDP_DP_data_fifo_80x36
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_data_fifo_80x18 (
       nvdla_core_clk
@@ -2198,7 +2197,7 @@ endmodule // NV_NVDLA_CDP_DP_data_fifo_80x18
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_data_fifo_80x9 (
       nvdla_core_clk

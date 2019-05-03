@@ -7,9 +7,9 @@
 // ================================================================
 
 // File Name: NV_NVDLA_BDMA_cq.v
-
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_BDMA_cq (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -462,6 +462,7 @@ endmodule // NV_NVDLA_BDMA_cq
 // 
 // Flop-Based RAM (with internal wr_reg)
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_BDMA_cq_flopram_rwsa_20x161 (
       clk
     , clk_mgated
@@ -680,7 +681,7 @@ endmodule // NV_NVDLA_BDMA_cq_flopram_rwsa_20x161
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_BDMA_cq_flopram_rwsa_20x161 (
    Wa0, we0, Di0,
    Ra0, Do0

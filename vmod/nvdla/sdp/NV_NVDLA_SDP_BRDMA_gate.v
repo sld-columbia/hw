@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_BRDMA_gate.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_BRDMA_gate (
    nvdla_core_clk

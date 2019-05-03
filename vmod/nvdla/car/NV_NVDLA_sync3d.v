@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_sync3d.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_sync3d (
    clk

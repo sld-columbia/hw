@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_MRDMA_EG_cmd.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 module NV_NVDLA_SDP_MRDMA_EG_cmd (
@@ -445,7 +446,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_EG_cmd
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo (
       nvdla_core_clk
@@ -826,6 +827,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo_flopram_rwsa_4x13 (
       clk
     , pwrbus_ram_pd
@@ -952,7 +954,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo_flopram_rwsa_4x13
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo_flopram_rwsa_4x13 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -1033,7 +1035,7 @@ endmodule // vmw_NV_NVDLA_SDP_MRDMA_EG_CMD_sfifo_flopram_rwsa_4x13
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_MRDMA_EG_CMD_dfifo (
       nvdla_core_clk
@@ -1414,6 +1416,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_EG_CMD_dfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_MRDMA_EG_CMD_dfifo_flopram_rwsa_4x15 (
       clk
     , pwrbus_ram_pd
@@ -1540,7 +1543,7 @@ endmodule // NV_NVDLA_SDP_MRDMA_EG_CMD_dfifo_flopram_rwsa_4x15
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_MRDMA_EG_CMD_dfifo_flopram_rwsa_4x15 (
    Wa0, we0, Di0,
    Ra0, Do0

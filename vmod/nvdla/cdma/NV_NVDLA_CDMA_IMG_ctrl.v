@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDMA_IMG_ctrl.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CDMA_define.h"
 

@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_DP_bufferin.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CDP_define.h"
 

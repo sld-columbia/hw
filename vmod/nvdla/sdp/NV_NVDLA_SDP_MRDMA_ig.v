@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_MRDMA_ig.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_SDP_define.h"
 `include "simulate_x_tick.vh"

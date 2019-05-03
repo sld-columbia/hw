@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: nv_ram_rwsp_128x6.v
+`include "NV_NVDLA_define.vh"
 
 `timescale 1ns / 10ps
 module nv_ram_rwsp_128x6 (

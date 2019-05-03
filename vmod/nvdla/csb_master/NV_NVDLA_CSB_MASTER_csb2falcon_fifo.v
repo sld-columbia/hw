@@ -7,9 +7,9 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CSB_MASTER_csb2falcon_fifo.v
-
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSB_MASTER_csb2falcon_fifo (
       wr_clk
     , wr_reset_
@@ -666,6 +666,7 @@ endmodule // NV_NVDLA_CSB_MASTER_csb2falcon_fifo
 // 
 // Flop-Based RAM (with internal wr_reg)
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSB_MASTER_csb2falcon_fifo_flopram_rwa_2x34 (
       clk
     , clk_mgated
@@ -789,7 +790,7 @@ endmodule // NV_NVDLA_CSB_MASTER_csb2falcon_fifo_flopram_rwa_2x34
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_CSB_MASTER_csb2falcon_fifo_flopram_rwa_2x34 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -869,7 +870,7 @@ endmodule // vmw_NV_NVDLA_CSB_MASTER_csb2falcon_fifo_flopram_rwa_2x34
 // See the ASYNCHONROUS BOUNDARY section above for details on the
 // gray counter implementation.
 //
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSB_MASTER_csb2falcon_fifo_gray_cntr_strict (
 `ifdef NV_FPGA_FIFOGEN
       inc ,
@@ -898,6 +899,7 @@ assign gray_next =
 
 endmodule // NV_NVDLA_CSB_MASTER_csb2falcon_fifo_gray_cntr_strict
 
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_CSB_MASTER_csb2falcon_fifo_gray_cntr (
       clk
     , reset_

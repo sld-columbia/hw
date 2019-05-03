@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: simulate_x_tick.vh
+`include "NV_NVDLA_define.vh"
 
 `ifdef _SIMULATE_X_VH_
 `else

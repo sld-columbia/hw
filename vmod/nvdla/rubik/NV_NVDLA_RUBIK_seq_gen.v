@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_RUBIK_seq_gen.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_RUBIK_seq_gen (
    nvdla_core_clk

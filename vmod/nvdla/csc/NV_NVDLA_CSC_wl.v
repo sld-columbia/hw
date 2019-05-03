@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CSC_wl.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CSC.h"
 

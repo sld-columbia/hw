@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_CLK_gate_power.v
+`include "NV_NVDLA_define.vh"
 
 module NV_CLK_gate_power (clk, reset_, clk_en, clk_gated);
 input clk, reset_, clk_en;

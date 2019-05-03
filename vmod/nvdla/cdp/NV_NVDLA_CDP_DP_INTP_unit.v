@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDP_DP_INTP_unit.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDP_DP_INTP_unit (
    nvdla_core_clk  

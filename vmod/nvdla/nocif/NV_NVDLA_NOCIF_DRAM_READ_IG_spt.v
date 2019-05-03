@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_NOCIF_DRAM_READ_IG_spt.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 #include "NV_NVDLA_define.h"
@@ -605,6 +606,7 @@ wire p2_assert_clk = nvdla_core_clk;
 
 endmodule // NV_NVDLA_NOCIF_READ_IG_spt
 
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_NOCIF_DRAM_READ_IG_SPT_pipe_p1 (
    nvdla_core_clk
   ,nvdla_core_rstn

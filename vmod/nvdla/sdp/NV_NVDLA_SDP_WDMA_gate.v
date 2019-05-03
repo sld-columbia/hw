@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_WDMA_gate.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_WDMA_gate (
    dla_clk_ovr_on_sync

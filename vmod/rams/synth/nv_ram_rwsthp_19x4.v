@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: nv_ram_rwsthp_19x4.v
+`include "NV_NVDLA_define.vh"
 
 `timescale 1ns / 10ps
 `ifdef _SIMULATE_X_VH_

@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_RUBIK_intr.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_RUBIK_intr (
    nvdla_core_clk         //|< i
@@ -104,7 +105,7 @@ endmodule // NV_NVDLA_RUBIK_intr
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_RUBIK_opdone_fifo (
       nvdla_core_clk
@@ -796,6 +797,7 @@ endmodule // NV_NVDLA_RUBIK_opdone_fifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_RUBIK_opdone_fifo_flopram_rwsa_4x1 (
       clk
     , pwrbus_ram_pd
@@ -917,7 +919,7 @@ endmodule // NV_NVDLA_RUBIK_opdone_fifo_flopram_rwsa_4x1
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_RUBIK_opdone_fifo_flopram_rwsa_4x1 (
    Wa0, we0, Di0,
    Ra0, Do0

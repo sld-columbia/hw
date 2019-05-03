@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_cbuf.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CBUF.h"
 `include "simulate_x_tick.vh"

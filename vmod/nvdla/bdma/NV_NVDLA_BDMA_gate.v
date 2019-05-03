@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_BDMA_gate.v
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_BDMA_gate (
    csb2gate_slcg_en

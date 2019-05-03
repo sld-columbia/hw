@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: int_sum_block.v
+`include "NV_NVDLA_define.vh"
 
 module int_sum_block (
    nvdla_core_clk

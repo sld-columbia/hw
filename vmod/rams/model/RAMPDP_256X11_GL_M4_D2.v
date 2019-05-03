@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: RAMPDP_256X11_GL_M4_D2.v
+`include "NV_NVDLA_define.vh"
 
 `ifdef EMULATION
 	`define SYNTHESIS

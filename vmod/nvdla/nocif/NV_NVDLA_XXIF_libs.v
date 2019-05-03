@@ -1,4 +1,3 @@
-
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!                                                       !!!!!!!!!!!!
@@ -34,6 +33,7 @@
 // arbgen2 -m read_ig_arb -n 10 -stdout -gnt_busy -t wrr -wt_width 8
 // TYPE: wrr 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 //| &Viva push dangle_checks_off;
 //| &Viva width_learning_on;
 
@@ -2145,6 +2145,7 @@ endmodule // read_ig_arb
 // arbgen2 -m read_eg_arb -n 10 -stdout -t wrr -wt_width 8
 // TYPE: wrr 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 //| &Viva push dangle_checks_off;
 //| &Viva width_learning_on;
 
@@ -4207,6 +4208,7 @@ endmodule // read_eg_arb
 // arbgen2 -m write_ig_arb -n 5 -stdout -gnt_busy -t wrr -wt_width 8
 // TYPE: wrr 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 //| &Viva push dangle_checks_off;
 //| &Viva width_learning_on;
 
@@ -5378,6 +5380,7 @@ endmodule // write_ig_arb
 // arbgen2 -m write_eg_arb -n 5 -stdout -t wrr -wt_width 8
 // TYPE: wrr 
 `include "simulate_x_tick.vh"
+`include "NV_NVDLA_define.vh"
 //| &Viva push dangle_checks_off;
 //| &Viva width_learning_on;
 

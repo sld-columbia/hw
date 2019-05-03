@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_RDMA_eg.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_SDP_define.h"
 

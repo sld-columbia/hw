@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_NOCIF_DRAM_READ_cq.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1

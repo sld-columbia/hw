@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_csb_master.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 module NV_NVDLA_csb_master (

@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: nv_ram_rws_32x512_logic.v
+`include "NV_NVDLA_define.vh"
 
 `ifdef _SIMULATE_X_VH_
 `else

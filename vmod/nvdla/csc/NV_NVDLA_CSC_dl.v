@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CSC_dl.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CSC.h"
 #include "../cbuf/NV_NVDLA_CBUF.h"

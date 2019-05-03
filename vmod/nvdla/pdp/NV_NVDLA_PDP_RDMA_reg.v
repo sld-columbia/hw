@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_PDP_RDMA_reg.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 module NV_NVDLA_PDP_RDMA_reg (

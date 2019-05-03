@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_RUBIK_wrdma_data.v
+`include "NV_NVDLA_define.vh"
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
@@ -712,6 +713,7 @@ endmodule // NV_NVDLA_RUBIK_wrdma_data
 // 
 // Flop-Based RAM (with internal wr_reg)
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_RUBIK_wrdma_data_flopram_rwsa_4x256 (
       clk
     , clk_mgated
@@ -850,7 +852,7 @@ endmodule // NV_NVDLA_RUBIK_wrdma_data_flopram_rwsa_4x256
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_RUBIK_wrdma_data_flopram_rwsa_4x256 (
    Wa0, we0, Di0,
    Ra0, Do0

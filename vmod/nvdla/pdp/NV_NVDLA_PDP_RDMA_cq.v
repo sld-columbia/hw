@@ -1,4 +1,3 @@
-
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //| !!!!!!!!!!!!                                                       !!!!!!!!!!!!
@@ -32,7 +31,7 @@
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_PDP_RDMA_cq (
       nvdla_core_clk
@@ -458,6 +457,7 @@ endmodule // NV_NVDLA_PDP_RDMA_cq
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_PDP_RDMA_cq_flopram_rwsa_256x18 (
       clk
     , pwrbus_ram_pd
@@ -1838,7 +1838,7 @@ endmodule // NV_NVDLA_PDP_RDMA_cq_flopram_rwsa_256x18
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_PDP_RDMA_cq_flopram_rwsa_256x18 (
    Wa0, we0, Di0,
    Ra0, Do0

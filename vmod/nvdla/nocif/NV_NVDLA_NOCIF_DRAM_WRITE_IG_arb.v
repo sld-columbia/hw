@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_NOCIF_DRAM_WRITE_IG_arb.v
+`include "NV_NVDLA_define.vh"
 
 `include "simulate_x_tick.vh"
 #include "NV_NVDLA_define.h"
@@ -346,7 +347,7 @@ endmodule // NV_NVDLA_NOCIF_WRITE_IG_arb
 // leda B_1405 OFF -- 2 asynchronous resets in this unit detected
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_NOCIF_DRAM_WRITE_IG_ARB_dfifo (
       nvdla_core_clk
@@ -757,6 +758,7 @@ NV_BLKBOX_SRC0 dummy_breadcrumb_fifogen_blkbox (.Y());
 
 endmodule // NV_NVDLA_NOCIF_DRAM_WRITE_IG_ARB_dfifo
 
+`include "NV_NVDLA_define.vh"
 // 
 // Flop-Based RAM 
 //
@@ -915,6 +917,7 @@ always @(*) begin
 end
 endmodule
 
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_NOCIF_DRAM_WRITE_IG_ARB_pipe_p1 (
    nvdla_core_clk
   ,nvdla_core_rstn

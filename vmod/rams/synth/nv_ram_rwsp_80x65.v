@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: nv_ram_rwsp_80x65.v
+`include "NV_NVDLA_define.vh"
 
 `timescale 1ns / 10ps
 module nv_ram_rwsp_80x65 (

@@ -1,3 +1,4 @@
+`include "NV_NVDLA_define.vh"
 
 //Technology      : TSMC 16FF-LR
 //Compiler version: FINAL.1 - 2017-05-25.18:47:15

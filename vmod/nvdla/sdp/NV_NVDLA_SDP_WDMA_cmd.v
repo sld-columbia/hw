@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_SDP_WDMA_cmd.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_SDP_define.h"
 
@@ -1405,7 +1406,7 @@ endmodule // NV_NVDLA_SDP_WDMA_cmd
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_SDP_WDMA_CMD_sfifo (
       nvdla_core_clk
@@ -1786,6 +1787,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_sfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_sfifo_flopram_rwsa_4x15 (
       clk
     , pwrbus_ram_pd
@@ -1912,7 +1914,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_sfifo_flopram_rwsa_4x15
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_WDMA_CMD_sfifo_flopram_rwsa_4x15 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -1994,7 +1996,7 @@ endmodule // vmw_NV_NVDLA_SDP_WDMA_CMD_sfifo_flopram_rwsa_4x15
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
 
-
+`include "NV_NVDLA_define.vh"
 #if (NVDLA_MEMORY_ATOMIC_SIZE == 8 &&  NVDLA_MEM_ADDRESS_WIDTH == 32) 
 
 module NV_NVDLA_SDP_WDMA_CMD_dfifo (
@@ -2376,6 +2378,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x44 (
       clk
     , pwrbus_ram_pd
@@ -2502,7 +2505,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x44
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x44 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -2581,7 +2584,7 @@ endmodule // vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x44
 
 
 #elif (NVDLA_MEMORY_ATOMIC_SIZE == 16 &&  NVDLA_MEM_ADDRESS_WIDTH == 64) 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -2962,6 +2965,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x75 (
       clk
     , pwrbus_ram_pd
@@ -3087,7 +3091,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x75
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x75 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -3147,7 +3151,7 @@ endmodule // vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x75
 
 #elif (NVDLA_MEMORY_ATOMIC_SIZE == 32 &&  NVDLA_MEM_ADDRESS_WIDTH == 64) 
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -3527,6 +3531,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x74 (
       clk
     , pwrbus_ram_pd
@@ -3653,7 +3658,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x74
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x74 (
    Wa0, we0, Di0,
    Ra0, Do0
@@ -3735,7 +3740,7 @@ endmodule // vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x74
 
 //width=NVDLA_MEM_ADDRESS_WIDTH-log2(NVDLA_MEMORY_ATOMIC_SIZE) +15
 
-
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo (
       nvdla_core_clk
     , nvdla_core_rstn
@@ -4116,6 +4121,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo
 // 
 // Flop-Based RAM 
 //
+`include "NV_NVDLA_define.vh"
 module NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x76 (
       clk
     , pwrbus_ram_pd
@@ -4241,7 +4247,7 @@ endmodule // NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x76
 //
 `ifdef EMU
 
-
+`include "NV_NVDLA_define.vh"
 module vmw_NV_NVDLA_SDP_WDMA_CMD_dfifo_flopram_rwsa_4x76 (
    Wa0, we0, Di0,
    Ra0, Do0

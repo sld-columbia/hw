@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_CDMA_wt.v
+`include "NV_NVDLA_define.vh"
 
 #include "NV_NVDLA_CDMA_define.h"
 
@@ -2402,7 +2403,7 @@ endmodule // NV_NVDLA_CDMA_wt
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"
-
+`include "NV_NVDLA_define.vh"
 
 module NV_NVDLA_CDMA_WT_8ATMM_fifo (
       nvdla_core_clk

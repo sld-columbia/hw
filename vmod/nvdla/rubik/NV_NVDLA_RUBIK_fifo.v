@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: NV_NVDLA_RUBIK_fifo.v
+`include "NV_NVDLA_define.vh"
 
 `define FORCE_CONTENTION_ASSERTION_RESET_ACTIVE 1'b1
 `include "simulate_x_tick.vh"

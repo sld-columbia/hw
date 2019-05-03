@@ -7,6 +7,7 @@
 // ================================================================
 
 // File Name: RAMDP_128X6_GL_M2_E2.v
+`include "NV_NVDLA_define.vh"
 
 `timescale 10ps/1ps
 `celldefine
