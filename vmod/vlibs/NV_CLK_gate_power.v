@@ -26,7 +26,7 @@ CKLNQD12 p_clkgate (.TE(1'b0), .CP(clk), .E(clk_en), .Q(clk_gated));
 `ifdef VERILINT
 `else
 // synopsys translate_off
-
+`ifdef ASSERT_ON
 reg disable_asserts; initial disable_asserts = $test$plusargs( "disable_nv_clk_gate_asserts" ) != 0;
 
 nv_assert_no_x #(0, 1, 0, "clk_gated is X after reset" )
@@ -36,6 +36,7 @@ nv_assert_no_x #(0, 1, 0, "clk_gated is X after reset" )
 nv_assert_no_x #(0, 1, 0, "clk_en is X after reset" )
     clk_en_not_x( .clk( clk ), .reset_( reset_ || disable_asserts ), .start_event( 1'b1 ), .test_expr( clk_en ) );
 
+`endif
 // synopsys translate_on
 `endif
 
