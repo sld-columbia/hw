@@ -42,4 +42,3 @@ add_test(name='img_51x96x4_1x10x4x32_R8G8B8A8_int8_0', #pixel format 0xf
          config=['nvdla_utb'],
          desc='''copied from cc_small_full_feature_17, kernel stride 2x2, unpacked, no padding, clip truncate 3, full weight, input cvt enable, cvt_scale 1, cvt_offset 0, cvt_truncate 0''')
 
-
